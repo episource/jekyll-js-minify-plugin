@@ -6,6 +6,7 @@ module Jekyll
   module JsMinify
     
     class MinJsFile < Jekyll::StaticFile
+      @@mtimes = {}
 
       def closure_args()
         closure_args = {}
